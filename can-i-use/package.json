@@ -1,0 +1,44 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "can-i-use",
+  "title": "Can I Use",
+  "description": "Search for Can I Use features, list the results and open the selected page in the browser",
+  "icon": "command-icon.png",
+  "author": "gilbarbara",
+  "owner": "transience",
+  "categories": [
+    "Developer Tools"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Can I Use",
+      "subtitle": "Search features...",
+      "description": "Search for features at caniuse.com",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@gilbarbara/helpers": "^0.6.3",
+    "@raycast/api": "^1.46.0",
+    "@raycast/utils": "^1.4.16"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.27",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  }
+}
